@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="">
+        <div id="fixo" class="grid-12">
+            <div class="item-col-4">
+                <img class="logo" src="assets/vidamarinha.svg" alt="">
+            </div>
+            <nav id="menu" class="item-col-8">
+                <ul id="lista">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Notícias</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="iconbar" href="#" onclick="mostrar()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <main class="azul">
+        <div class="imagem-fundo">
+            <section class="grid-12">
+                <div class="item-col-12">
+                    <h1>Tubarão branco</h1>
+                </div>
+            </section>
+        </div>
+        <section class="grid-12 azul">
+
+            <h2  class="item-col-12">Tartaruga marinha</h2>
+            
+            <div class="item-col-4">
+                <img src="assets/01.jpg" alt="">
+            </div>
+            <div class="item-col-4">
+                <img src="assets/02.jpg" alt="">
+            </div>
+            <div class="item-col-4">
+                <img src="assets/03.jpg" alt="">
+            </div>
+        </section>
+     <!--
+        <section class="grid-12">
+            <div class="item-col-5">com 5</div>
+            <div class="item-col-7">com 7</div>
+        </section>
+
+        <section class="grid-12">
+            <div class="item-col-4">item-col-4</div>
+            <div class="item-col-4">item-col-4</div>
+            <div class="item-col-4">item-col-4</div>
+        </section>
+
+        <section class="grid-12">
+            <div class="item-col-3">item-col-3</div>
+            <div class="item-col-3">item-col-3</div>
+            <div class="item-col-3">item-col-3</div>
+            <div class="item-col-3">item-col-3</div>
+        </section>
+
+            -->
+
+
+    </main>
+    <footer class="grid-12">
+        <div class="item-col-3">footer</div>
+        <div class="item-col-3">footer</div>
+    </footer>
+
+    <script>
+        function mostrar() {
+            let lista = document.querySelector("#lista")
+            if(lista.style.display === "block") {
+                lista.style.display = "none"
+            } else {
+                lista.style.display = "block"
+            }
+
+        }
+    </script>
+    
+
+</body>
+</html>

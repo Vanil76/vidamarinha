@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;    
+}
+.w75 {
+    width: 75vw;
+    background-color: aqua;
+}
+img {width: 100%;}
+center {margin: 0 auto;}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Comforter', cursive;
+    font-weight: normal;
+    color: rgb(8, 8, 114);
+    padding: 40px 0 20px 0;
+}
+
+header {
+    width: 100vw;
+    background-color: #e0f3fc;
+    padding: 20px 0;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 200px;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul > li > a {
+    display: block;
+    padding: 0 20px;
+    color: darkblue;
+}
+
+.azul {background-color: #e0f3fc;}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.item-col-2 {
+    grid-column: span 2;
+    
+}
+.item-col-3 {
+    grid-column: span 3;
+}
+.item-col-4 {
+    grid-column: span 4;
+}
+.item-col-5 {
+    grid-column: span 5;
+}
+.item-col-7 {
+    grid-column: span 7;
+}
+.item-col-8 {
+    grid-column: span 8;
+}
+.item-col-9 {
+    grid-column: span 9;
+}
+.item-col-10 {
+    grid-column: span 10;
+}
+.item-col-12 {
+    grid-column: span 12;
+}
+.imagem-fundo {
+    background-image: url("assets/tubarao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 93px);
+}
+.iconbar {
+    background-color: #3e4095;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    font-size: 1rem;    
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 10px;    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .item-col-5 {
+        grid-column: span 12;
+    }
+    .item-col-7 {
+        grid-column: span 12;
+    }
+    .item-col-2{
+        grid-column: span 12;
+    }    
+    .item-col-10{
+        grid-column: span 12;
+    }
+    .item-col-4 {
+        grid-column: span 12;
+    }
+    .item-col-3 {
+        grid-column: span 6;/*3 vira 6, para ter dois na tela*/
+    }
+    /*--------------------------*/
+    nav {
+        /*display: none;*/
+    }
+    #lista {
+        display: none;
+        position: absolute;
+        background-color: #3e4095;
+        top: 89.02px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        animation: descemenu 0.7s ease;
+        animation-fill-mode: forwards;
+    }
+    nav > ul > li > a {
+        padding: 20px 0;
+        color: white;
+    }
+    .iconbar {
+        display: block;
+    }
+
+    @keyframes descemenu {
+        0% {
+            opacity: 0;
+            transform: translateY(-90px);
+        }        
+    }
+
+
+}
+
+@media screen and (max-width: 624px) {
+    .item-col-3 {
+        grid-column: span 12;/*3 vira 6, para ter dois na tela*/
+    }
+}
